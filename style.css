@@ -84,12 +84,17 @@ img {
   top: 20px;
   left: 30px;
 }
-.header-social ul {
+.header-social ul,
+.header-flag ul {
   overflow: hidden;
 }
 .header-social li {
   float: left;
   margin-right: 12px;
+}
+.header-flag li {
+  float: left;
+  margin-left: 15px;
 }
 .header-social a {
   background: no-repeat center;
@@ -100,7 +105,16 @@ img {
   font-size: 0;
   opacity: .5;
 }
-.header-social a:hover {
+.header-flag a {
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 24px;
+  background: no-repeat 0 -2px;
+  background-size: auto 20px;
+  opacity: .7;
+}
+.header-social a:hover,
+.header-flag a:hover {
   opacity: 1;
 }
 .header-social .fb {
@@ -115,4 +129,23 @@ img {
 }
 .header-social .ma {
   background-image: url(/shared/images/img_ma.png);
+}
+.header-flag .vn {
+  background-image: url(/shared/images/img_vie.png);
+}
+.header-flag .en {
+  background-image: url(/shared/images/img_eng.png);
+}
+.header-flag {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.header-flag li {
+  float: 
+}
+.header-search {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
 }
