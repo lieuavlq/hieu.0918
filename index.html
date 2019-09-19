@@ -14,6 +14,7 @@
   <meta property="fb:app_id" content="">
   <meta property="og:type" content="website">
   <title>CÔNG TY TNHH THƯƠNG MẠI & CÔNG NGHỆ BDC</title>
+  <link rel="stylesheet" href="/shared/slider/slick.css">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -38,7 +39,6 @@
         <div class="header-search">
           <form role="search" method="get" class="search-form" action="/">
             <label>
-              <span class="screen-reader-text">Tìm kiếm:</span>
               <input type="search" class="search-field" placeholder="Tìm kiếm …" value="" name="s">
             </label>
             <button type="submit" class="search-submit"><span class="screen-reader-text">Tìm kiếm</span></button>
@@ -46,8 +46,33 @@
         </div>
       </div>
     </div>
+    <div class="site-header-menu">
+      <nav class="main-navigation" role="navigation">
+        <ul class="primary-menu">
+          <li><a href="#">Sản Phẩm</a></li>
+          <li class="active"><a href="#">Lĩnh Vực</a>
+            <ul class="sub-menu">
+              <li><a href="#">Thức Ăn</a></li>
+              <li><a href="#">Sản Phẩm Bơ Sữa</a></li>
+              <li><a href="#">Mỹ Phẩm</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dịch Vụ</a></li>
+          <li><a href="#">Tải Tài Liệu</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">Thông Tin</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <div class="slider">
+    <div><a href="#"><img src="/shared/images/img_slide01.jpg" alt=""></a></div>
+    <div><a href="#"><img src="/shared/images/img_slide02.jpg" alt=""></a></div>
+    <div><a href="#"><img src="/shared/images/img_slide03.jpg" alt=""></a></div>
+  </div>
   <script src="/shared/js/jquery.min.js"></script>
+  <script src="/shared/slider/slick.min.js"></script>
   <script src="/shared/js/main.js"></script>
 </body>
 </html>
