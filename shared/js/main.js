@@ -14,10 +14,11 @@ $(function() {
     infinite: true,
     dots: true,
     arrows: false,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     speed: 500,
     fade: true,
     cssEase: 'linear'
   });
+  $('.mh').matchHeight();
 });
