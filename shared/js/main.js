@@ -14,11 +14,30 @@ $(function() {
     infinite: true,
     dots: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     speed: 500,
     fade: true,
     cssEase: 'linear'
   });
   $('.mh').matchHeight();
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > $('.header-navigation').offset().top) {
+      $('.header-navigation').addClass('active');
+    } else {
+      $('.header-navigation').removeClass('active');
+    }
+  });
+  $('.header-btn').click(function() {
+    $('.header-menusp').addClass('active');
+  });
+  $('.header-btn-close').click(function() {
+    $('.header-menusp').removeClass('active');
+  });
+  $('.header-menusp .hld').click(function(e) {
+    e.stopPropagation();
+  });
+  $('.header-menusp').click(function() {
+    $('.header-menusp').removeClass('active');
+  });
 });
