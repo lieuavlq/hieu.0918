@@ -1514,3 +1514,42 @@ iframe {
 .free-txt > * {
   margin: 15px 0;
 }
+.box-technical {
+  max-width: 80%;
+  margin: 40px auto 0;
+}
+.box-technical > div {
+  overflow: hidden;
+  line-height: 26px;
+}
+.box-technical > div + div {
+  margin-top: 40px;
+}
+.box-technical h3 {
+  float: left;
+  width: 30%;
+  margin-right: 60px;
+  color: #b42239;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: right;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.box-technical p {
+  overflow: hidden;
+  margin-top: 6px;
+}
+.box-technical > div > div {
+  overflow: hidden;
+  background: #e7e7e7;
+  padding: 15px 20px;
+}
+.box-technical > div > div > a {
+  margin: 3px 0;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 24px;
+  background: url(shared/images/icon_dl.png) no-repeat right center;
+  background-size: 16px;
+}
