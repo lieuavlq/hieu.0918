@@ -20,8 +20,22 @@ $(function() {
     fade: true,
     cssEase: 'linear'
   });
-  $('.mh').matchHeight();
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    infinite: false
+  });
   $('.pro-list img').one('load', function() {
+    $('.mh').matchHeight();
     $('.pro-list a').matchHeight();
     $('.pro-list .img').matchHeight();
   }).each(function() {
